@@ -14,6 +14,9 @@
 		819D07D419CFEC2F00CE22AA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 819D07D319CFEC2F00CE22AA /* Images.xcassets */; };
 		819D07D719CFEC2F00CE22AA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 819D07D519CFEC2F00CE22AA /* LaunchScreen.xib */; };
 		819D07E319CFEC2F00CE22AA /* StoryboardNAutoLayoutDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 819D07E219CFEC2F00CE22AA /* StoryboardNAutoLayoutDemoTests.m */; };
+		819D07EE19D0088300CE22AA /* PlayersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 819D07ED19D0088300CE22AA /* PlayersViewController.m */; };
+		819D07F119D0099600CE22AA /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 819D07F019D0099600CE22AA /* Player.m */; };
+		819D07F419D01AA200CE22AA /* PlayerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 819D07F319D01AA200CE22AA /* PlayerCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,12 @@
 		819D07DC19CFEC2F00CE22AA /* StoryboardNAutoLayoutDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StoryboardNAutoLayoutDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		819D07E119CFEC2F00CE22AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		819D07E219CFEC2F00CE22AA /* StoryboardNAutoLayoutDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoryboardNAutoLayoutDemoTests.m; sourceTree = "<group>"; };
+		819D07EC19D0088300CE22AA /* PlayersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayersViewController.h; sourceTree = "<group>"; };
+		819D07ED19D0088300CE22AA /* PlayersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayersViewController.m; sourceTree = "<group>"; };
+		819D07EF19D0099600CE22AA /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		819D07F019D0099600CE22AA /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		819D07F219D01AA200CE22AA /* PlayerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerCell.h; sourceTree = "<group>"; };
+		819D07F319D01AA200CE22AA /* PlayerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +98,12 @@
 				819D07D319CFEC2F00CE22AA /* Images.xcassets */,
 				819D07D519CFEC2F00CE22AA /* LaunchScreen.xib */,
 				819D07C619CFEC2F00CE22AA /* Supporting Files */,
+				819D07EC19D0088300CE22AA /* PlayersViewController.h */,
+				819D07ED19D0088300CE22AA /* PlayersViewController.m */,
+				819D07EF19D0099600CE22AA /* Player.h */,
+				819D07F019D0099600CE22AA /* Player.m */,
+				819D07F219D01AA200CE22AA /* PlayerCell.h */,
+				819D07F319D01AA200CE22AA /* PlayerCell.m */,
 			);
 			path = StoryboardNAutoLayoutDemo;
 			sourceTree = "<group>";
@@ -220,8 +235,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				819D07CF19CFEC2F00CE22AA /* ViewController.m in Sources */,
+				819D07EE19D0088300CE22AA /* PlayersViewController.m in Sources */,
 				819D07CC19CFEC2F00CE22AA /* AppDelegate.m in Sources */,
 				819D07C919CFEC2F00CE22AA /* main.m in Sources */,
+				819D07F419D01AA200CE22AA /* PlayerCell.m in Sources */,
+				819D07F119D0099600CE22AA /* Player.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
