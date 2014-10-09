@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="6oD-I6-XlV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A361c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="6oD-I6-XlV">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
@@ -9,8 +9,8 @@
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="zL6-MP-kc9"/>
-                        <viewControllerLayoutGuide type="bottom" id="Nc0-Lr-yol"/>
+                        <viewControllerLayoutGuide type="top" id="OCb-hr-JS3"/>
+                        <viewControllerLayoutGuide type="bottom" id="mR6-kK-tx9"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -35,21 +35,41 @@
             <objects>
                 <viewController id="j7I-oW-n3Z" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="YLZ-4u-hTS"/>
-                        <viewControllerLayoutGuide type="bottom" id="has-QB-Pox"/>
+                        <viewControllerLayoutGuide type="top" id="DUP-ai-Hdm"/>
+                        <viewControllerLayoutGuide type="bottom" id="lbK-7N-pPi"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="387-g3-89C">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="second tab" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6LB-09-9gc">
-                                <rect key="frame" x="117" y="197" width="87" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HZz-AC-bfy">
+                                <rect key="frame" x="16" y="20" width="151" height="266"/>
+                                <color key="backgroundColor" red="1" green="0.97505856804265112" blue="0.18091666626557634" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zo1-2K-qh6">
+                                <rect key="frame" x="182" y="20" width="122" height="266"/>
+                                <color key="backgroundColor" red="0.25623800128272445" green="1" blue="0.16237540539209394" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dyz-1k-XZx">
+                                <rect key="frame" x="16" y="294" width="288" height="206"/>
+                                <color key="backgroundColor" red="1" green="0.15128314837033263" blue="0.28583396602340128" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Zo1-2K-qh6" firstAttribute="top" secondItem="387-g3-89C" secondAttribute="top" constant="20" id="0RJ-YA-qBJ"/>
+                            <constraint firstItem="Zo1-2K-qh6" firstAttribute="width" secondItem="HZz-AC-bfy" secondAttribute="width" id="A5j-t3-IiU"/>
+                            <constraint firstItem="HZz-AC-bfy" firstAttribute="leading" secondItem="387-g3-89C" secondAttribute="leading" constant="16" id="ASO-XA-wyY"/>
+                            <constraint firstAttribute="trailing" secondItem="Zo1-2K-qh6" secondAttribute="trailing" constant="16" id="EU0-Aw-i40"/>
+                            <constraint firstItem="Dyz-1k-XZx" firstAttribute="height" secondItem="Zo1-2K-qh6" secondAttribute="height" id="N4f-3x-kOn"/>
+                            <constraint firstItem="HZz-AC-bfy" firstAttribute="top" secondItem="387-g3-89C" secondAttribute="top" constant="20" id="STR-Q7-Xib"/>
+                            <constraint firstAttribute="trailing" secondItem="Dyz-1k-XZx" secondAttribute="trailing" constant="16" id="iN5-tZ-Wwb"/>
+                            <constraint firstItem="Dyz-1k-XZx" firstAttribute="leading" secondItem="387-g3-89C" secondAttribute="leading" constant="16" id="iYp-8O-tgS"/>
+                            <constraint firstItem="Dyz-1k-XZx" firstAttribute="top" secondItem="HZz-AC-bfy" secondAttribute="bottom" constant="8" id="kZo-mo-zfl"/>
+                            <constraint firstItem="Zo1-2K-qh6" firstAttribute="leading" secondItem="HZz-AC-bfy" secondAttribute="trailing" constant="15" id="nn2-Rx-adx"/>
+                            <constraint firstAttribute="bottom" secondItem="Dyz-1k-XZx" secondAttribute="bottom" constant="68" id="q9c-w3-tRA"/>
+                            <constraint firstItem="Dyz-1k-XZx" firstAttribute="height" secondItem="HZz-AC-bfy" secondAttribute="height" id="yxU-Pb-9BS"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Gestures" image="Gestures.png" id="VrQ-EK-GyN"/>
                 </viewController>
